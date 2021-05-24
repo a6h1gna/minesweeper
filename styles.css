@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Noto Serif', serif;
+}
+
+.container{
+    width:500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.grid{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bbb;
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size:1.7rem;
+    transition: all .5s ease;
+}
+
+.grid div:hover{
+    background-color: #a5a3f5;
+}
+
+.checked{
+    background-color: #f0e091;
+}
+
+.bomb-style{
+    background-color: rgb(129, 127, 127);
+}
+
+.one{
+    color: #0400ff;
+}
+.two{
+    color: rgb(8, 145, 65);
+}
+
+.three{
+    color: rgb(255, 0, 51);
+}
+.four{
+    color: rgb(132, 1, 226);;
+}
+
+.five{
+    color: rgb(47, 88, 107);
+}
+
+.six{
+    color: #6b69c9
+}
+
+.flag-div{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.result{
+    transition: all .3s ease-in;
+    color: rgb(2, 255, 129);
+    font-size: 2rem;
+}
+
+.msg{
+    color: white;
+    font-size: 1rem;
+    transition: all 3s ease;
+}
+
+@media (max-width:500px){
+    .container{
+        width:100vw;
+        height: 100vh;
+    }
+
+    .grid{
+        height: 300px;
+        width: 300px;
+    }
+
+    .grid div{
+        height: 30px;
+        width: 30px;
+        font-size:1.2rem;
+    }
+}
