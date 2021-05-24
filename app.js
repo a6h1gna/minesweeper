@@ -1,7 +1,7 @@
 const grid  = document.querySelector(".grid");
 const flagsLeft = document.getElementById("flags-left");
 const result = document.querySelector(".result");
-const msg = document.querySelector(".msg");
+const reload = document.querySelector(".reload");
 let width = 10;
 let bombAmount = 20;
 let squares = [];
@@ -169,7 +169,7 @@ function checkSquare(square, currentId)
 function gameOver(square)
 {
     result.innerHTML = "Game Over"
-    msg.innerHTML = "Reload the page to play again"
+    reload.innerHTML = "Reload the page to play again"
     isGameOver=true;
 
     squares.forEach(square =>{
@@ -191,7 +191,7 @@ function checkForWin(){
         if(matches === bombAmount)
         {
             result.innerHTML = "You win"
-            msg.innerHTML = "Reload the page to play again"
+            reload.innerHTML = "Reload the page to play again"
             isGameOver = true;
         }
     }

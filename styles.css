@@ -93,10 +93,15 @@ h1{
     font-size: 2rem;
 }
 
-.msg{
+.reload{
     color: white;
     font-size: 1rem;
     transition: all 3s ease;
+}
+
+.msg{
+    color: white;
+    padding: 1rem;
 }
 
 @media (max-width:500px){
