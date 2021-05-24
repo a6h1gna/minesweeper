@@ -1,2 +1,2 @@
 # minesweeper
-A simple minesweeper game which can be played on any device
+A simple Minesweeper game which can be played on any device.
